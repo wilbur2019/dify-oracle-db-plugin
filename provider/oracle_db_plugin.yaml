@@ -1,6 +1,6 @@
 identity:
-  author: "WilburOracle"
-  name: "oracle_db_plugin"
+  author: wilbur2019
+  name: oracle_db_plugin
   label:
     en_US: "Oracle Database Provider"
     zh_Hans: "Oracle数据库提供者"
