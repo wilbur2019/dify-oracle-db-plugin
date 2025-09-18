@@ -1,6 +1,6 @@
 version: 0.0.1
 type: plugin
-author: WilburOracle
+author: wilbur2019
 name: oracle_db_plugin
 label:
   en_US: Oracle Database Query
