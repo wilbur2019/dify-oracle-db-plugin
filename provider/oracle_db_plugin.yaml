@@ -2,13 +2,13 @@ identity:
   author: wilbur2019
   name: oracle_db_plugin
   label:
-    en_US: "Oracle Database Provider"
-    zh_Hans: "Oracle数据库提供者"
-    pt_BR: "Provedor de Banco de Dados Oracle"
+    en_US: "Oracle Database"
+    zh_Hans: "Oracle 数据库"
+    pt_BR: "Banco de Dados Oracle"
   description:
-    en_US: "Provider for connecting to Oracle database using Thin Mode"
-    zh_Hans: "使用Thin Mode连接Oracle数据库的提供者"
-    pt_BR: "Provedor para conexão com banco de dados Oracle usando Modo Thin"
+    en_US: "Connect to Oracle database using Thin Mode"
+    zh_Hans: "使用Thin Mode连接Oracle数据库"
+    pt_BR: "Conectar ao banco de dados Oracle usando Modo Thin"
   icon: "oracle.png"
 tools:
   - tools/oracle_db_plugin.yaml

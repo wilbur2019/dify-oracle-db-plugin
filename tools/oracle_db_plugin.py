@@ -24,7 +24,9 @@ class OracleDbPluginTool(Tool):
         # 根据当前语言返回对应消息，如果没有对应语言的消息，返回英文消息
         return messages_dict.get(self.language, messages_dict.get('en_US', ''))
     
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
+        # 或者也可以使用 Iterator[ToolInvokeMessage]，如果不需要指定 send 和 return 类型
+        # def _invoke(self, tool_parameters: dict[str, Any]) -> Iterator[ToolInvokeMessage]:
         conn = None
         try:
             # 获取连接参数
@@ -74,8 +76,16 @@ class OracleDbPluginTool(Tool):
                     row_dict = {columns[i]: value for i, value in enumerate(row)}
                     # 处理可能的特殊类型
                     for key, value in row_dict.items():
+                        # 处理LOB类型
+                        if isinstance(value, oracledb.LOB):
+                            try:
+                                # 尝试将LOB转换为字符串
+                                row_dict[key] = value.read()
+                            except:
+                                # 如果读取失败，设置为None或错误信息
+                                row_dict[key] = None
                         # 转换datetime对象为字符串
-                        if hasattr(value, 'strftime'):
+                        elif hasattr(value, 'strftime'):
                             row_dict[key] = value.strftime('%Y-%m-%d %H:%M:%S')
                     results.append(row_dict)
                 
