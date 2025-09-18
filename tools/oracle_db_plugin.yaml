@@ -1,6 +1,6 @@
 identity:
-  name: "oracle_db_plugin"
-  author: "WilburOracle"
+  name: oracle_db_plugin
+  author: wilbur2019
   label:
     en_US: "Oracle Database Query"
     zh_Hans: "Oracle数据库查询"
