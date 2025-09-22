@@ -6,9 +6,9 @@ identity:
     zh_Hans: "Oracle 数据库"
     pt_BR: "Banco de Dados Oracle"
   description:
-    en_US: "Connect to Oracle database using Thin Mode"
-    zh_Hans: "使用Thin Mode连接Oracle数据库"
-    pt_BR: "Conectar ao banco de dados Oracle usando Modo Thin"
+    en_US: "Connect to Oracle database using Standard (Username/Password) or Oracle ADB Wallet connection"
+    zh_Hans: "使用标准（用户名/密码）或Oracle ADB钱包方式连接Oracle数据库"
+    pt_BR: "Conectar ao banco de dados Oracle usando conexão padrão (Nome de Usuário/Senha) ou Carteira Oracle ADB"
   icon: "oracle.png"
 tools:
   - tools/oracle_db_plugin.yaml

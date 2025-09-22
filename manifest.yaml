@@ -8,10 +8,10 @@ label:
   zh_Hans: Oracle数据库查询
   pt_BR: Consulta Oracle Database
 description:
-  en_US: Connect to Oracle database and execute SQL queries using Thin Mode.
-  ja_JP: Thinモードを使用してOracleデータベースに接続し、SQLクエリを実行します。
-  zh_Hans: 使用Thin Mode连接Oracle数据库并执行SQL查询。
-  pt_BR: Conecte-se ao banco de dados Oracle e execute consultas SQL usando o Modo Thin.
+  en_US: Connect to Oracle database and execute SQL queries using Standard (Username/Password) or Oracle ADB Wallet connection.
+  ja_JP: 標準（ユーザー名/パスワード）またはOracle ADBウォレット接続を使用してOracleデータベースに接続し、SQLクエリを実行します。
+  zh_Hans: 使用标准（用户名/密码）或Oracle ADB钱包方式连接Oracle数据库并执行SQL查询。
+  pt_BR: Conecte-se ao banco de dados Oracle e execute consultas SQL usando conexão padrão (Nome de Usuário/Senha) ou Carteira Oracle ADB.
 icon: oracle.png
 icon_dark: oracle.png
 resource:
