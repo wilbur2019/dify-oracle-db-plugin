@@ -1,4 +1,4 @@
-version: 0.0.2
+version: 0.0.3
 type: plugin
 author: wilbur2019
 name: oracle_db_plugin
@@ -21,7 +21,7 @@ plugins:
   tools:
     - provider/oracle_db_plugin.yaml
 meta:
-  version: 0.0.2
+  version: 0.0.3
   arch:
     - amd64
     - arm64
