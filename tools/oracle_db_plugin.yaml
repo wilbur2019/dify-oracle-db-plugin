@@ -117,7 +117,7 @@ parameters:
       field: connection_type
       value: standard
   - name: wallet_base64
-    type: textarea
+    type: string
     required: false
     label:
       en_US: Wallet File (Base64)
