@@ -74,12 +74,12 @@ class OracleDbPluginTool(Tool):
                 dsn = f'{host}:{port}/{service_name}'
                 
                 # 连接数据库
-            conn = oracledb.connect(
-                user=user,
-                password=password,
-                dsn=dsn
-            )
-        elif connection_type == 'wallet':
+                conn = oracledb.connect(
+                    user=user,
+                    password=password,
+                    dsn=dsn
+                )
+            elif connection_type == 'wallet':
                 # ADB钱包连接方式
                 wallet_b64 = tool_parameters.get('wallet_base64')
                 wallet_password = tool_parameters.get('wallet_password')
